@@ -2,7 +2,7 @@
 
 A clean, minimalist countdown timer perfect for exams, study sessions, and time management. Built with vanilla JavaScript and SVG for smooth circular progress animation.
 
-![Exam Timer Preview](/preview.png)
+![Exam Timer Preview](/preview.jpg)
 
 ## Features
 
