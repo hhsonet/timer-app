@@ -1,141 +1,82 @@
-# Exam Timer Browser Extension
+# Exam Timer
 
-A lightweight browser extension that provides a clean, minimalist countdown timer perfect for exams, study sessions, and time management. Features a beautiful circular progress indicator and intuitive controls.
+A clean, minimalist countdown timer perfect for exams, study sessions, and time management. Built with vanilla JavaScript and SVG for smooth circular progress animation.
 
-![Exam Timer Extension Preview](/screenshots/preview.png)
+![Exam Timer Preview](/preview.png)
 
 ## Features
 
-- 🎯 Circular progress visualization
-- ⚡ Quick preset timers (1h, 2h, 5m, 15m)
-- ⌨️ Custom time input (hours, minutes, seconds)
-- ⏯️ Pause/Resume functionality
-- 🔄 Reset option
-- 🎨 Clean, modern interface
-- 📱 Responsive design
-- 🔔 Time's up notification
-- 🌙 Works in background
+- Circular progress indicator
+- Hour, minute, and second input fields
+- Preset time buttons (1 hour, 2 hours, 5 minutes, 15 minutes)
+- Pause, resume, and reset functionality
+- Visual progress tracking
+- Mobile-responsive design
+- Clean, modern UI
+
+## Demo
+
+View the live demo: [Exam Timer Demo](https://your-username.github.io/exam-timer)
 
 ## Installation
 
-### Chrome Web Store
-1. Visit the [Chrome Web Store](https://chrome.google.com/webstore)
-2. Search for "Exam Timer"
-3. Click "Add to Chrome"
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/exam-timer.git
+```
 
-### Manual Installation (Developer Mode)
-1. Download or clone this repository
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the extension directory
+2. Open `index.html` in your browser
 
 ## Usage
 
-1. Click the extension icon in your browser toolbar
-2. Set your timer using either:
+1. Set the timer using either:
    - Input fields for hours, minutes, and seconds
-   - Preset time buttons (1h, 2h, 5m, 15m)
-3. Click "Start" to begin countdown
-4. Use "Pause" to temporarily stop
-5. "Reset" to clear and start over
-
-The timer will continue running even when the popup is closed. You'll receive a notification when time is up.
-
-## Development
-
-### Project Structure
-```
-exam-timer-extension/
-├── manifest.json
-├── popup/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── background/
-│   └── background.js
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   ├── icon128.png
-│   └── icon192.png
-└── screenshots/
-    └── preview.png
-```
-
-### Building from Source
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/exam-timer-extension.git
-```
-
-2. Make your modifications to the source code
-
-3. Test locally:
-   - Open Chrome
-   - Go to `chrome://extensions/`
-   - Enable Developer mode
-   - Click "Load unpacked"
-   - Select the extension directory
-
-### manifest.json
-```json
-{
-  "manifest_version": 3,
-  "name": "Exam Timer",
-  "version": "1.0.0",
-  "description": "A clean, minimalist countdown timer perfect for exams and study sessions",
-  "permissions": ["notifications", "storage"],
-  "action": {
-    "default_popup": "popup/index.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png",
-    "192": "icons/icon192.png"
-  },
-  "background": {
-    "service_worker": "background/background.js"
-  }
-}
-```
+   - Preset time buttons
+2. Click "Start" to begin the countdown
+3. Use "Pause" to temporarily stop the timer
+4. "Reset" to clear the timer and start over
 
 ## Contributing
 
-We welcome contributions! Please follow these steps:
-
 1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/YourFeature`
-3. Commit your changes: `git commit -m 'Add YourFeature'`
-4. Push to the branch: `git push origin feature/YourFeature`
-5. Submit a Pull Request
-
-### Development Guidelines
-- Follow the existing code style
-- Test thoroughly in different browsers
-- Update documentation as needed
-- Add comments for complex logic
-
-## Support
-
-- Report bugs via [GitHub Issues](https://github.com/your-username/exam-timer-extension/issues)
-- For feature requests, open an issue with the "enhancement" label
-- Check existing issues before creating new ones
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+---
 
-- Icons from [Material Design Icons](https://material.io/icons/)
-- SVG progress ring inspired by [Jake Archibald's blog post](https://jakearchibald.com/2013/animated-line-drawing-svg/)
+# .gitignore
+node_modules/
+.DS_Store
+.env
+*.log
 
-## Privacy Policy
+---
 
-This extension does not collect or transmit any user data. All timer data is stored locally in your browser using the Chrome Storage API.
+# LICENSE
+MIT License
+
+Copyright (c) [2025] [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
