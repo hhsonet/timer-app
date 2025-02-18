@@ -16,7 +16,7 @@ A clean, minimalist countdown timer perfect for exams, study sessions, and time 
 
 ## Demo
 
-View the live demo: [Timer App Demo](https://hhsonet.github.io/timer-app/)
+View the live demo: [Timer App Demo](https://hhsonet.github.io/timer-app)
 
 ## Installation
 
