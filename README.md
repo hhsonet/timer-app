@@ -50,13 +50,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-# .gitignore
-node_modules/
-.DS_Store
-.env
-*.log
 
----
 
 # LICENSE
 MIT License
